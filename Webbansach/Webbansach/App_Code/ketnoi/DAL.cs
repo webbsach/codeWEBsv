@@ -9,7 +9,7 @@ using System.Web;
 /// </summary>
 public static class DAL
 {
-public static void ketnoi()
+public static SqlConnection ketnoi()
     {
         string cnt = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename="; 
         string cnl= ";Integrated Security=True;Connect Timeout=30";
@@ -22,6 +22,6 @@ public static void ketnoi()
         string cs = cnt + a + cnl;
         conn = new SqlConnection(cs);
         conn.Open();
-
+        return conn;
     }
 }
