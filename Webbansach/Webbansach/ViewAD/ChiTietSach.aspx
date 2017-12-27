@@ -79,39 +79,40 @@
                         </form>
                     </div>
 
-                    <div class="sidebarmenu">
+                                       <div class="sidebarmenu">
 
                         <a class="menuitem submenuheader" href="">Hóa Đơn</a>
                         <div class="submenu">
                             <ul>
-                                <li><a href="">Hóa Đơn Nhập</a></li>
-                                <li><a href="">Hóa Đơn Xuất</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/HoaDonNhap.aspx">Hóa Đơn Nhập</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/HoaDonXuat.aspx">Hóa Đơn Xuất</a></li>
                             </ul>
                         </div>
                         <a class="menuitem submenuheader" href="">Quản Lý Sách</a>
                         <div class="submenu">
                             <ul>
-                                <li><a href="">Thể Loại Sách</a></li>
-                                <li><a href="">Sách</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/TheLoaiSach.aspx">Thể Loại Sách</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/Sach.aspx">Sách</a></li>
                             </ul>
                         </div>
                         <a class="menuitem submenuheader" href="">Hợp Tác</a>
                         <div class="submenu">
                             <ul>
-                                <li><a href="">Nhà Cung Cấp</a></li>
-                                <li><a href="">Nhà Xuất Bản</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/NhaCungCap.aspx">Nhà Cung Cấp</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/NhaXuatBan.aspx">Nhà Xuất Bản</a></li>
                             </ul>
                         </div>
                         <a class="menuitem submenuheader" href="">Quản Lý Tài Khoản</a>
                         <div class="submenu">
                             <ul>
-                                <li><a href="">Tài Khoản</a></li>
-                                <li><a href="">Nhóm Tài Khoản</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/TaiKhoan.aspx">Tài Khoản</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/NhomTaiKhoan.aspx">Nhóm Tài Khoản</a></li>
                             </ul>
                         </div>
-                        <a class="menuitem" href="">Nhân Viên</a>
+                        <a class="menuitem" href="http://localhost:51161/ViewAD/NhanVien.aspx">Nhân Viên</a>
 
                     </div>
+
 
                 </div>
 
@@ -152,75 +153,6 @@
                                     <img src="images/trash.png" alt="" title="" border="0" /></a></td>
                             </tr>
 
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" /></td>
-                                <td>Product name</td>
-                                <td>details</td>
-                                <td>150$</td>
-                                <td>12/05/2010</td>
-                                <td>12/05/2010</td>
-                                <td><a href="#">
-                                    <img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-                                <td><a href="#" class="ask">
-                                    <img src="images/trash.png" alt="" title="" border="0" /></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" /></td>
-                                <td>Product name</td>
-                                <td>details</td>
-                                <td>150$</td>
-                                <td>12/05/2010</td>
-                                <td>12/05/2010</td>
-                                <td><a href="#">
-                                    <img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-                                <td><a href="#" class="ask">
-                                    <img src="images/trash.png" alt="" title="" border="0" /></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" /></td>
-                                <td>Product name</td>
-                                <td>details</td>
-                                <td>150$</td>
-                                <td>12/05/2010</td>
-                                <td>12/05/2010</td>
-                                <td><a href="#">
-                                    <img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-                                <td><a href="#" class="ask">
-                                    <img src="images/trash.png" alt="" title="" border="0" /></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" /></td>
-                                <td>Product name</td>
-                                <td>details</td>
-                                <td>150$</td>
-                                <td>12/05/2010</td>
-                                <td>12/05/2010</td>
-                                <td><a href="#">
-                                    <img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-                                <td><a href="#" class="ask">
-                                    <img src="images/trash.png" alt="" title="" border="0" /></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" /></td>
-                                <td>Product name</td>
-                                <td>details</td>
-                                <td>150$</td>
-                                <td>12/05/2010</td>
-                                <td>12/05/2010</td>
-                                <td><a href="#">
-                                    <img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-                                <td><a href="#" class="ask">
-                                    <img src="images/trash.png" alt="" title="" border="0" /></a></td>
-                            </tr>
-
                         </tbody>
                     </table>
 
@@ -229,9 +161,6 @@
                     <a href="#" class="bt_red"><span class="bt_red_lft"></span><strong>Delete items</strong><span class="bt_red_r"></span></a>
 
 
-                    <div class="pagination">
-                        <span class="disabled"><< prev</span><span class="current">1</span><a href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a>…<a href="">10</a><a href="">11</a><a href="">12</a>...<a href="">100</a><a href="">101</a><a href="">next >></a>
-                    </div>
 
 
                     <h2>Nice Form example</h2>

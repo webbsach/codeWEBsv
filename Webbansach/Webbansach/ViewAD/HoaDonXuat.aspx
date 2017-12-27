@@ -78,39 +78,40 @@
                         </form>
                     </div>
 
-                    <div class="sidebarmenu">
+                                       <div class="sidebarmenu">
 
                         <a class="menuitem submenuheader" href="">Hóa Đơn</a>
                         <div class="submenu">
                             <ul>
-                                <li><a href="">Hóa Đơn Nhập</a></li>
-                                <li><a href="">Hóa Đơn Xuất</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/HoaDonNhap.aspx">Hóa Đơn Nhập</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/HoaDonXuat.aspx">Hóa Đơn Xuất</a></li>
                             </ul>
                         </div>
                         <a class="menuitem submenuheader" href="">Quản Lý Sách</a>
                         <div class="submenu">
                             <ul>
-                                <li><a href="">Thể Loại Sách</a></li>
-                                <li><a href="">Sách</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/TheLoaiSach.aspx">Thể Loại Sách</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/Sach.aspx">Sách</a></li>
                             </ul>
                         </div>
                         <a class="menuitem submenuheader" href="">Hợp Tác</a>
                         <div class="submenu">
                             <ul>
-                                <li><a href="">Nhà Cung Cấp</a></li>
-                                <li><a href="">Nhà Xuất Bản</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/NhaCungCap.aspx">Nhà Cung Cấp</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/NhaXuatBan.aspx">Nhà Xuất Bản</a></li>
                             </ul>
                         </div>
                         <a class="menuitem submenuheader" href="">Quản Lý Tài Khoản</a>
                         <div class="submenu">
                             <ul>
-                                <li><a href="">Tài Khoản</a></li>
-                                <li><a href="">Nhóm Tài Khoản</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/TaiKhoan.aspx">Tài Khoản</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/NhomTaiKhoan.aspx">Nhóm Tài Khoản</a></li>
                             </ul>
                         </div>
-                        <a class="menuitem" href="">Nhân Viên</a>
-                       
+                        <a class="menuitem" href="http://localhost:51161/ViewAD/NhanVien.aspx">Nhân Viên</a>
+
                     </div>
+
                                       
                 </div>
 
