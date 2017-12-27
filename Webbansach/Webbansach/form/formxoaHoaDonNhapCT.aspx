@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="formHoaDonNhap.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="formxoaHoaDonNhapCT.aspx.cs" Inherits="_Default" %>
 
 <!DOCTYPE html>
 

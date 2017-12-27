@@ -52,7 +52,7 @@
             <div class="logo"><a href="#">
                 <img src="images/logo.gif" alt="" title="" border="0" /></a></div>
 
-            <div class="right_header">Welcome Admin, <a href="#">Visit site</a> | <a href="#" class="logout">Logout</a></div>
+            <div class="right_header">Welcome Admin, <a href="<%Page.Request.Url.ToString(); %>">Visit site</a> | <a href="#" class="logout">Logout</a></div>
             <div id="clock_a"></div>
         </div>
 
@@ -136,15 +136,19 @@
                         </thead>
 
                         <tbody>
-                            <%for (int i = 0; i < 5; i++)
+                            <%
+                               
+                              var  db = DAL.getstr("select * from HoaDonNhap ");
+                                int x = db.Rows.Count ; %>
+                            <%for (int i = 0; i < x; i++)
                                 { %>
                             <tr>
                                 <td>
-                                    <input type="checkbox" name="" /></td>
-                                <td>Product name</td>
-                                <td>details</td>
-                                <td>150$</td>
-                                <td>12/05/2010</td>
+                                    <input type="checkbox" name=" " /></td>
+                                <td><%ViewAD_HoaDonNhap.so();%></td>
+                                <td><%db.Rows[i][1].ToString();%></td>
+                                <td><%db.Rows[i][2].ToString();%></td>
+                                <td><%db.Rows[i][3].ToString();%></td>
 
                                 <td><a href="#">
                                     <img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
