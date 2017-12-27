@@ -19,8 +19,5 @@ protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Write("<script>alert(Record insert successfuly)</script>");
         }
-        else
-            Response.Write("<script>alert(Record insert fail)</script>");
-
     }
 }

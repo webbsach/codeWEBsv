@@ -14,7 +14,7 @@ public partial class _Default : System.Web.UI.Page
 protected void Button1_Click(object sender, EventArgs e)
     {
         localhost.WebService ws = new localhost.WebService();
-       int tam= ws.deleteHoaDonNhap(IDhd.Text);
+       int tam= ws.deleteHoaDonNhapChiTiet(IDhd.Text,IDhd0.Text);
         if(tam>0)
         {
             Response.Write("<script>alert(Record insert successfuly)</script>");

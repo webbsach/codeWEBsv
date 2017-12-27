@@ -186,11 +186,11 @@ public class WebService : System.Web.Services.WebService
     }
     // xoa hoa don nhap
     [WebMethod]
-    public int deleteHoaDonNhap(string sIDHoaDonNhap)
+    public int deleteHoaDonNhap(string sIDHoaDonNhap, string sIDSach)
     {
          
         con = DAL.ketnoi();con.Open();
-        var cmd = new SqlCommand("delete from HoaDonNhapChiTiet where IDHoaDonNhap= '" + sIDHoaDonNhap + "'", con);
+        var cmd = new SqlCommand("delete from HoaDonNhapChiTiet where IDHoaDonNhap= '" + sIDHoaDonNhap + "' and IDSach=' "+sIDSach+"'", con);
         int row = cmd.ExecuteNonQuery();
          cmd = new SqlCommand("delete from HoaDonNhap where IDHoaDonNhap= '"+sIDHoaDonNhap+"'", con);
          row = cmd.ExecuteNonQuery();

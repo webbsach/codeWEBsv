@@ -27,19 +27,19 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">ID nhân viên</td>
+                <td class="auto-style2">ID Sách</td>
                 <td>
                     <asp:TextBox ID="IDnv" runat="server" Width="186px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Ngày lập</td>
+                <td class="auto-style2">Giá nhập</td>
                 <td>
                     <asp:TextBox ID="ngaylap" runat="server" Width="186px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">ID nhà cung cấp</td>
+                <td class="auto-style2">Số lượng</td>
                 <td>
                     <asp:TextBox ID="IDncc" runat="server" Width="186px"></asp:TextBox>
                 </td>
@@ -49,7 +49,7 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
-        <asp:Button ID="Button1" runat="server" CssClass="auto-style3" Text="insert" Width="51px" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" CssClass="auto-style3" Text="Insert " Width="51px" OnClick="Button1_Click" />
     </form>
 </body>
 </html>
