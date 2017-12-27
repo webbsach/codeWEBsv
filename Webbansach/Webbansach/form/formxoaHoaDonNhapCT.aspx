@@ -13,7 +13,7 @@
             width: 114px;
         }
         .auto-style3 {
-            margin-left: 80px;
+            margin-left: 0px;
         }
     </style>
 </head>
@@ -27,29 +27,27 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">ID nhân viên</td>
+                <td class="auto-style2">ID Sách</td>
                 <td>
-                    <asp:TextBox ID="IDnv" runat="server" Width="186px"></asp:TextBox>
+                    <asp:TextBox ID="IDhd0" runat="server" Width="186px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Ngày lập</td>
+                <td class="auto-style2">&nbsp;</td>
                 <td>
-                    <asp:TextBox ID="ngaylap" runat="server" Width="186px"></asp:TextBox>
+        <asp:Button ID="Button1" runat="server" CssClass="auto-style3" Text="Delete" Width="51px" OnClick="Button1_Click" />
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">ID nhà cung cấp</td>
+                <td class="auto-style2">&nbsp;</td>
                 <td>
-                    <asp:TextBox ID="IDncc" runat="server" Width="186px"></asp:TextBox>
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
-        <asp:Button ID="Button1" runat="server" CssClass="auto-style3" Text="insert" Width="51px" OnClick="Button1_Click" />
     </form>
 </body>
 </html>

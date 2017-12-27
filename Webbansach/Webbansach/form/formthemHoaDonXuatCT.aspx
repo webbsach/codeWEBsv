@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="formthemHoaDonNhap.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="formthemHoaDonXuatCT.aspx.cs" Inherits="_Default" %>
 
 <!DOCTYPE html>
 
@@ -21,19 +21,19 @@
     <form id="form1" runat="server">
         <table cellpadding="2" class="auto-style1">
             <tr>
-                <td class="auto-style2">ID hóa đơn nhập</td>
+                <td class="auto-style2">ID hóa đơn xuất</td>
                 <td>
                     <asp:TextBox ID="IDhd" runat="server" Width="186px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">ID nhân viên</td>
+                <td class="auto-style2">ID Sách</td>
                 <td>
                     <asp:TextBox ID="IDnv" runat="server" Width="186px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Ngày lập</td>
+                <td class="auto-style2">Số lượng xuất</td>
                 <td>
                     <asp:TextBox ID="ngaylap" runat="server" Width="186px"></asp:TextBox>
                 </td>
@@ -45,11 +45,13 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style2">Giá bán</td>
+                <td>
+                    <asp:TextBox ID="IDncc0" runat="server" Width="186px"></asp:TextBox>
+                </td>
             </tr>
         </table>
-        <asp:Button ID="Button1" runat="server" CssClass="auto-style3" Text="Insert " Width="51px" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" CssClass="auto-style3" Text="insert" Width="51px" OnClick="Button1_Click" />
     </form>
 </body>
 </html>
