@@ -79,39 +79,42 @@
                         </form>
                     </div>
 
-                  <div class="sidebarmenu">
-            
-                <a class="menuitem submenuheader" href="">Hóa Đơn</a>
-                <div class="submenu">
-                    <ul>
-                    <li><a href="<%Page.Request.Url.ToString(); %>">Hóa Đơn Nhập</a></li>
-                    <li><a href=" <% Response.Redirect("HoaDonXuat.aspx");%>">Hóa Đơn Xuất</a></li>
-                    </ul>
+                                      <div class="sidebarmenu">
+
+                        <a class="menuitem submenuheader" href="">Hóa Đơn</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="http://localhost:51161/ViewAD/HoaDonNhap.aspx">Hóa Đơn Nhập</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/HoaDonXuat.aspx">Hóa Đơn Xuất</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="">Quản Lý Sách</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="http://localhost:51161/ViewAD/TheLoaiSach.aspx">Thể Loại Sách</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/Sach.aspx">Sách</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="">Hợp Tác</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="http://localhost:51161/ViewAD/NhaCungCap.aspx">Nhà Cung Cấp</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/NhaXuatBan.aspx">Nhà Xuất Bản</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem submenuheader" href="">Quản Lý Tài Khoản</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="http://localhost:51161/ViewAD/TaiKhoan.aspx">Tài Khoản</a></li>
+                                <li><a href="http://localhost:51161/ViewAD/NhomTaiKhoan.aspx">Nhóm Tài Khoản</a></li>
+                            </ul>
+                        </div>
+                        <a class="menuitem" href="http://localhost:51161/ViewAD/NhanVien.aspx">Nhân Viên</a>
+
+                    </div>
+
+
                 </div>
-                <a class="menuitem submenuheader" href="" >Quản Lý Sách</a>
-                <div class="submenu">
-                    <ul>
-                    <li><a href="<% Response.Redirect("TheLoaiSach.aspx");%>">Thể Loại Sách</a></li>
-                    <li><a href="<% Response.Redirect("Sach.aspx");%>">Sách</a></li>
-                    </ul>
-                </div>
-                <a class="menuitem submenuheader" href="">Hợp Tác</a>
-                <div class="submenu">
-                    <ul>
-                    <li><a href="<% Response.Redirect("NhaCungCap.aspx");%>">Nhà Cung Cấp</a></li>
-                    <li><a href="<% Response.Redirect("NhaXuatBan.aspx");%>">Nhà Xuất Bản</a></li>
-                    </ul>
-                </div>
-                 <a class="menuitem submenuheader" href="">Quản Lý Tài Khoản</a>
-                <div class="submenu">
-                    <ul>
-                    <li><a href="<% Response.Redirect("TaiKhoan.aspx");%>">Tài Khoản</a></li>
-                    <li><a href="<% Response.Redirect("NhomTaiKhoan.aspx");%>">Nhóm Tài Khoản</a></li>
-                    </ul>
-                </div>
-                <a class="menuitem" href="<% Response.Redirect("NhanVien.aspx");%>">Nhân Viên</a>
-                            
-            </div>
 
                 <div class="right_content">
 
