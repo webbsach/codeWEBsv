@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Web;
 
@@ -20,5 +21,15 @@ public static SqlConnection ketnoi()
         conn = new SqlConnection(cs);
    
         return conn;
+    }
+    public static DataTable getstr(string cnn)
+    {
+        SqlConnection conn = ketnoi();
+        conn.Open();
+        var cmd = new SqlCommand("", conn);
+        SqlDataAdapter myAdapter = new SqlDataAdapter(cnn, conn);
+        DataTable myTable = new DataTable();
+        myAdapter.Fill(myTable);
+        return myTable;
     }
 }
