@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="HoaDonNhap.aspx.cs" Inherits="ViewAD_HoaDonNhap" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -60,7 +59,7 @@ ddaccordion.init({
     
                     <div class="menu">
                     <ul>
-                    <li><a class="current" href="index.html">Admin Home</a></li>
+                    <li><a class="current" href="<%Page.Request.Url.ToString(); %>">Admin Home</a></li>
                                         
                     </ul>
                     </div> 
@@ -136,6 +135,8 @@ ddaccordion.init({
     </thead>
       
     <tbody>
+        <%for (int i = 0; i < 5; i++)
+            { %>
     	<tr>
         	<td><input type="checkbox" name="" /></td>
             <td>Product name</td>
@@ -146,60 +147,8 @@ ddaccordion.init({
             <td><a href="#"><img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
             <td><a href="#" class="ask"><img src="images/trash.png" alt="" title="" border="0" /></a></td>
         </tr>
-        
-    	<tr>
-        	<td><input type="checkbox" name="" /></td>
-            <td>Product name</td>
-            <td>details</td>
-            <td>150$</td>
-            <td>12/05/2010</td>
-
-            <td><a href="#"><img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#" class="ask"><img src="images/trash.png" alt="" title="" border="0" /></a></td>
-        </tr> 
-        
-    	<tr>
-        	<td><input type="checkbox" name="" /></td>
-            <td>Product name</td>
-            <td>details</td>
-            <td>150$</td>
-            <td>12/05/2010</td>
-
-            <td><a href="#"><img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#" class="ask"><img src="images/trash.png" alt="" title="" border="0" /></a></td>
-        </tr>
-        
-    	<tr>
-        	<td><input type="checkbox" name="" /></td>
-            <td>Product name</td>
-            <td>details</td>
-            <td>150$</td>
-            <td>12/05/2010</td>
-
-            <td><a href="#"><img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#" class="ask"><img src="images/trash.png" alt="" title="" border="0" /></a></td>
-        </tr>  
-    	<tr>
-        	<td><input type="checkbox" name="" /></td>
-            <td>Product name</td>
-            <td>details</td>
-            <td>150$</td>
-            <td>12/05/2010</td>
-
-            <td><a href="#"><img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#" class="ask"><img src="images/trash.png" alt="" title="" border="0" /></a></td>
-        </tr>
-        
-    	<tr>
-        	<td><input type="checkbox" name="" /></td>
-            <td>Product name</td>
-            <td>details</td>
-            <td>150$</td>
-            <td>12/05/2010</td>
-
-            <td><a href="#"><img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-            <td><a href="#" class="ask"><img src="images/trash.png" alt="" title="" border="0" /></a></td>
-        </tr>    
+        <%} %>
+ 
         
     </tbody>
 </table>
@@ -210,7 +159,7 @@ ddaccordion.init({
      
      
         <div class="pagination">
-        <span class="disabled"><< prev</span><span class="current">1</span><a href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a>…<a href="">10</a><a href="">11</a><a href="">12</a>...<a href="">100</a><a href="">101</a><a href="">next >></a>
+        <span class="disabled"><< prev</span><span class="current">1</span><a href="">2</a><a href="">next >></a>
         </div> 
                   
      <h2>Nice Form example</h2>
