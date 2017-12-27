@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="HoaDonNhap.aspx.cs" Inherits="ViewAD_Hoadon" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="HoaDonNhap.aspx.cs" Inherits="ViewAD_HoaDonNhap" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -127,11 +127,11 @@ ddaccordion.init({
     	<tr>
         	<th scope="col" class="rounded-company"></th>
             <th scope="col" class="rounded">Mã Hóa Đơn Nhập</th>
-            <th scope="col" class="rounded">Mã Sách</th>
-            <th scope="col" class="rounded">Giá Nhập</th>
-            <th scope="col" class="rounded">Số Lượng</th>
-            <th scope="col" class="rounded">Edit</th>
-            <th scope="col" class="rounded-q4">Delete</th>
+            <th scope="col" class="rounded">Mã Nhân Viên</th>
+            <th scope="col" class="rounded">Ngày Lập</th>
+            <th scope="col" class="rounded">Mã Nhà Cung Cấp</th>
+            <th scope="col" class="rounded">Sửa</th>
+            <th scope="col" class="rounded-q4">Xóa</th>
         </tr>
     </thead>
       
