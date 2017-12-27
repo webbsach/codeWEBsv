@@ -153,88 +153,13 @@
                                     <img src="images/trash.png" alt="" title="" border="0" /></a></td>
                             </tr>
 
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" /></td>
-                                <td>Product name</td>
-                                <td>details</td>
-                                <td>150$</td>
-                                <td>12/05/2010</td>
-                                <td>12/05/2010</td>
-                                <td><a href="#">
-                                    <img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-                                <td><a href="#" class="ask">
-                                    <img src="images/trash.png" alt="" title="" border="0" /></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" /></td>
-                                <td>Product name</td>
-                                <td>details</td>
-                                <td>150$</td>
-                                <td>12/05/2010</td>
-                                <td>12/05/2010</td>
-                                <td><a href="#">
-                                    <img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-                                <td><a href="#" class="ask">
-                                    <img src="images/trash.png" alt="" title="" border="0" /></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" /></td>
-                                <td>Product name</td>
-                                <td>details</td>
-                                <td>150$</td>
-                                <td>12/05/2010</td>
-                                <td>12/05/2010</td>
-                                <td><a href="#">
-                                    <img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-                                <td><a href="#" class="ask">
-                                    <img src="images/trash.png" alt="" title="" border="0" /></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" /></td>
-                                <td>Product name</td>
-                                <td>details</td>
-                                <td>150$</td>
-                                <td>12/05/2010</td>
-                                <td>12/05/2010</td>
-                                <td><a href="#">
-                                    <img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-                                <td><a href="#" class="ask">
-                                    <img src="images/trash.png" alt="" title="" border="0" /></a></td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="" /></td>
-                                <td>Product name</td>
-                                <td>details</td>
-                                <td>150$</td>
-                                <td>12/05/2010</td>
-                                <td>12/05/2010</td>
-                                <td><a href="#">
-                                    <img src="images/user_edit.png" alt="" title="" border="0" /></a></td>
-                                <td><a href="#" class="ask">
-                                    <img src="images/trash.png" alt="" title="" border="0" /></a></td>
-                            </tr>
-
                         </tbody>
                     </table>
 
                     <a href="#" class="bt_green"><span class="bt_green_lft"></span><strong>Add new item</strong><span class="bt_green_r"></span></a>
                     <a href="#" class="bt_blue"><span class="bt_blue_lft"></span><strong>View all items from category</strong><span class="bt_blue_r"></span></a>
                     <a href="#" class="bt_red"><span class="bt_red_lft"></span><strong>Delete items</strong><span class="bt_red_r"></span></a>
-
-
-                    <div class="pagination">
-                        <span class="disabled"><< prev</span><span class="current">1</span><a href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a>…<a href="">10</a><a href="">11</a><a href="">12</a>...<a href="">100</a><a href="">101</a><a href="">next >></a>
-                    </div>
-
-
+                                      
                     <h2>Nice Form example</h2>
 
                     <div class="form">
