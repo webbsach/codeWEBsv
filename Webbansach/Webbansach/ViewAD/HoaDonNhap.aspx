@@ -70,7 +70,7 @@ ddaccordion.init({
     <div class="center_content">  
     
     
-    
+    <%int asx; %>
     <div class="left_content">
     
     		<div class="sidebar_search">
@@ -86,7 +86,7 @@ ddaccordion.init({
                 <div class="submenu">
                     <ul>
                     <li><a href="">Hóa Đơn Nhập</a></li>
-                    <li><a href="">Hóa Đơn Xuất</a></li>
+                    <li><a href="<% Response.Redirect("~/ViewAD/HoaDonXuat.aspx"); %>">Hóa Đơn Xuất</a></li>
                     </ul>
                 </div>
                 <a class="menuitem submenuheader" href="" >Quản Lý Sách</a>

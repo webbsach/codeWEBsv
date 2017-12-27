@@ -12,8 +12,4 @@ public partial class ViewAD_HoaDonNhap : System.Web.UI.Page
     {
 
     }
-    int soluong()
-    {
-        return ws.
-    }
 }

@@ -77,46 +77,44 @@ ddaccordion.init({
     
     		<div class="sidebar_search">
             <form>
-            <input type="text" name="" class="search_input" value="search keyword" onclick="this.value=''" />
+            <input type="text" name="seach" class="search_input" value="search keyword" onclick="this.value=''" id="mama" />
             <input type="image" class="search_submit" src="images/search.png" />
             </form>            
             </div>
     
-            <div class="sidebarmenu">
+          <div class="sidebarmenu">
             
                 <a class="menuitem submenuheader" href="">Hóa Đơn</a>
                 <div class="submenu">
                     <ul>
-                    <li><a href="">Hóa Đơn Nhập</a></li>
-                    <li><a href="">Hóa Đơn Xuất</a></li>
+                    <li><a href="<%Page.Request.Url.ToString(); %>">Hóa Đơn Nhập</a></li>
+                    <li><a href=" <% Response.Redirect("HoaDonXuat.aspx");%>">Hóa Đơn Xuất</a></li>
                     </ul>
                 </div>
                 <a class="menuitem submenuheader" href="" >Quản Lý Sách</a>
                 <div class="submenu">
                     <ul>
-                    <li><a href="">Thể Loại Sách</a></li>
-                    <li><a href="">Sách</a></li>
+                    <li><a href="<% Response.Redirect("TheLoaiSach.aspx");%>">Thể Loại Sách</a></li>
+                    <li><a href="<% Response.Redirect("Sach.aspx");%>">Sách</a></li>
                     </ul>
                 </div>
                 <a class="menuitem submenuheader" href="">Hợp Tác</a>
                 <div class="submenu">
                     <ul>
-                    <li><a href="">Nhà Cung Cấp</a></li>
-                    <li><a href="">Nhà Xuất Bản</a></li>
+                    <li><a href="<% Response.Redirect("NhaCungCap.aspx");%>">Nhà Cung Cấp</a></li>
+                    <li><a href="<% Response.Redirect("NhaXuatBan.aspx");%>">Nhà Xuất Bản</a></li>
                     </ul>
                 </div>
                  <a class="menuitem submenuheader" href="">Quản Lý Tài Khoản</a>
                 <div class="submenu">
                     <ul>
-                    <li><a href="">Tài Khoản</a></li>
-                    <li><a href="">Nhóm Tài Khoản</a></li>
+                    <li><a href="<% Response.Redirect("TaiKhoan.aspx");%>">Tài Khoản</a></li>
+                    <li><a href="<% Response.Redirect("NhomTaiKhoan.aspx");%>">Nhóm Tài Khoản</a></li>
                     </ul>
                 </div>
-                <a class="menuitem" href="">Nhân Viên</a>
+                <a class="menuitem" href="<% Response.Redirect("NhanVien.aspx");%>">Nhân Viên</a>
                             
             </div>
-                          
-    </div>  
     
     <div class="right_content">            
         
