@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="insertSach">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDSach" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTenSach" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDTheLoai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSoLuongTong" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sLoiGioiThieu" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertSachResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertSachResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateSach">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDSach" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTenSach" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDTheLoai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSoLuongTong" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sLoiGioiThieu" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateSachResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateSachResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteSach">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDSach" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteSachResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteSachResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertChiTietSach">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDSach" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhaXuatBan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSoLuong" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAnh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sGiaBan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertChiTietSachResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertChiTietSachResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateChiTietSach">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDSach" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhaXuatBan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSoLuong" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sAnh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sGiaBan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateChiTietSachResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateChiTietSachResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteChiTietSach">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDSach" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhaXuatBan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteChiTietSachResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteChiTietSachResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertTheLoaiSach">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDTheLoai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTenTheLoai" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertTheLoaiSachResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertTheLoaiSachResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateTheLoaiSach">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDTheLoai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTenTheLoai" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateTheLoaiSachResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateTheLoaiSachResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteTheLoaiSach">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDTheLoai" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteTheLoaiSachResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteTheLoaiSachResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertNhaCungCap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhaCungCap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTenNhaCungCap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDiaChi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSDT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertNhaCungCapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertNhaCungCapResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateNhaCungCap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhaCungCap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTenNhaCungCap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDiaChi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSDT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateNhaCungCapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateNhaCungCapResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertNhaXuatBan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhaXuatBan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTenNhaXuatBan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDiaChi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertNhaXuatBanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertNhaXuatBanResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateNhaXuatBan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhaXuatBan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTenNhaXuatBan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDiaChi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateNhaXuatBanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateNhaXuatBanResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertHoaDonNhap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDHoaDonNhap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhanVien" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNgayLap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhaCungcap" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertHoaDonNhapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertHoaDonNhapResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateHoaDonNhap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDHoaDonNhap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhanVien" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNgayLap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhaCungcap" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateHoaDonNhapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateHoaDonNhapResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteHoaDonNhap">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDHoaDonNhap" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteHoaDonNhapResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteHoaDonNhapResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertHoaDonNhapChiTiet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDHoaDonNhap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDSach" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sGiaNhap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSoLuong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertHoaDonNhapChiTietResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertHoaDonNhapChiTietResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateHoaDonNhapChiTiet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDHoaDonNhap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDSach" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sGiaNhap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSoLuong" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateHoaDonNhapChiTietResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateHoaDonNhapChiTietResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteHoaDonNhapChiTiet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDHoaDonNhap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDSach" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteHoaDonNhapChiTietResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteHoaDonNhapChiTietResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertHoaDonXuat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDHoaDonXuat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhanVien" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDTaiKhoan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNgayXuat" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertHoaDonXuatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertHoaDonXuatResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateHoaDonXuat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDHoaDonXuat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhanVien" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDTaiKhoan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNgayXuat" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="updateHoaDonXuatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="updateHoaDonXuatResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteHoaDonXuat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDHoaDonXuat" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteHoaDonXuatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteHoaDonXuatResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertHoaDonXuatChiTiet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDHoaDonXuat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDSach" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSoLuongXuat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhaCungCap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sGiaBan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertHoaDonXuatChiTietResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertHoaDonXuatChiTietResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateHoaDonXuatChiTiet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDHoaDonXuat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDSach" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSoLuongXuat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhaCungCap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sGiaBan" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateHoaDonXuatChiTietResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateHoaDonXuatChiTietResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteHoaDonXuatChiTiet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDHoaDonXuat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDSach" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteHoaDonXuatChiTietResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="deleteHoaDonXuatChiTietResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertNhanVien">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhanVien" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sHoTen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTuoi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDiaChi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSDT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertNhanVienResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertNhanVienResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateNhanVien">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhanVien" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sHoTen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTuoi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDiaChi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSDT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateNhanVienResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateNhanVienResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertTaiKhoan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDTaiKhoan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTenTK" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sLoai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSDT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDiaChi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhom" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertTaiKhoanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertTaiKhoanResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTaiKhoan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDTaiKhoan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTenTK" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sLoai" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSDT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDiaChi" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhom" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTaiKhoanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateTaiKhoanResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertNhomTaiKhoan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTenNhom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sQuyenTruyCap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sThongTinNhom" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="insertNhomTaiKhoanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="insertNhomTaiKhoanResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateNhomTaiKhoan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sIDNhom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTenNhom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sQuyenTruyCap" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sThongTinNhom" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateNhomTaiKhoanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateNhomTaiKhoanResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="insertSachSoapIn">
+    <wsdl:part name="parameters" element="tns:insertSach" />
+  </wsdl:message>
+  <wsdl:message name="insertSachSoapOut">
+    <wsdl:part name="parameters" element="tns:insertSachResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateSachSoapIn">
+    <wsdl:part name="parameters" element="tns:updateSach" />
+  </wsdl:message>
+  <wsdl:message name="updateSachSoapOut">
+    <wsdl:part name="parameters" element="tns:updateSachResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteSachSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteSach" />
+  </wsdl:message>
+  <wsdl:message name="deleteSachSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteSachResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertChiTietSachSoapIn">
+    <wsdl:part name="parameters" element="tns:insertChiTietSach" />
+  </wsdl:message>
+  <wsdl:message name="insertChiTietSachSoapOut">
+    <wsdl:part name="parameters" element="tns:insertChiTietSachResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateChiTietSachSoapIn">
+    <wsdl:part name="parameters" element="tns:updateChiTietSach" />
+  </wsdl:message>
+  <wsdl:message name="updateChiTietSachSoapOut">
+    <wsdl:part name="parameters" element="tns:updateChiTietSachResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteChiTietSachSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteChiTietSach" />
+  </wsdl:message>
+  <wsdl:message name="deleteChiTietSachSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteChiTietSachResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertTheLoaiSachSoapIn">
+    <wsdl:part name="parameters" element="tns:insertTheLoaiSach" />
+  </wsdl:message>
+  <wsdl:message name="insertTheLoaiSachSoapOut">
+    <wsdl:part name="parameters" element="tns:insertTheLoaiSachResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateTheLoaiSachSoapIn">
+    <wsdl:part name="parameters" element="tns:updateTheLoaiSach" />
+  </wsdl:message>
+  <wsdl:message name="updateTheLoaiSachSoapOut">
+    <wsdl:part name="parameters" element="tns:updateTheLoaiSachResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteTheLoaiSachSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteTheLoaiSach" />
+  </wsdl:message>
+  <wsdl:message name="deleteTheLoaiSachSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteTheLoaiSachResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertNhaCungCapSoapIn">
+    <wsdl:part name="parameters" element="tns:insertNhaCungCap" />
+  </wsdl:message>
+  <wsdl:message name="insertNhaCungCapSoapOut">
+    <wsdl:part name="parameters" element="tns:insertNhaCungCapResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateNhaCungCapSoapIn">
+    <wsdl:part name="parameters" element="tns:updateNhaCungCap" />
+  </wsdl:message>
+  <wsdl:message name="updateNhaCungCapSoapOut">
+    <wsdl:part name="parameters" element="tns:updateNhaCungCapResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertNhaXuatBanSoapIn">
+    <wsdl:part name="parameters" element="tns:insertNhaXuatBan" />
+  </wsdl:message>
+  <wsdl:message name="insertNhaXuatBanSoapOut">
+    <wsdl:part name="parameters" element="tns:insertNhaXuatBanResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateNhaXuatBanSoapIn">
+    <wsdl:part name="parameters" element="tns:updateNhaXuatBan" />
+  </wsdl:message>
+  <wsdl:message name="updateNhaXuatBanSoapOut">
+    <wsdl:part name="parameters" element="tns:updateNhaXuatBanResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertHoaDonNhapSoapIn">
+    <wsdl:part name="parameters" element="tns:insertHoaDonNhap" />
+  </wsdl:message>
+  <wsdl:message name="insertHoaDonNhapSoapOut">
+    <wsdl:part name="parameters" element="tns:insertHoaDonNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateHoaDonNhapSoapIn">
+    <wsdl:part name="parameters" element="tns:updateHoaDonNhap" />
+  </wsdl:message>
+  <wsdl:message name="updateHoaDonNhapSoapOut">
+    <wsdl:part name="parameters" element="tns:updateHoaDonNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteHoaDonNhapSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteHoaDonNhap" />
+  </wsdl:message>
+  <wsdl:message name="deleteHoaDonNhapSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteHoaDonNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertHoaDonNhapChiTietSoapIn">
+    <wsdl:part name="parameters" element="tns:insertHoaDonNhapChiTiet" />
+  </wsdl:message>
+  <wsdl:message name="insertHoaDonNhapChiTietSoapOut">
+    <wsdl:part name="parameters" element="tns:insertHoaDonNhapChiTietResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateHoaDonNhapChiTietSoapIn">
+    <wsdl:part name="parameters" element="tns:updateHoaDonNhapChiTiet" />
+  </wsdl:message>
+  <wsdl:message name="updateHoaDonNhapChiTietSoapOut">
+    <wsdl:part name="parameters" element="tns:updateHoaDonNhapChiTietResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteHoaDonNhapChiTietSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteHoaDonNhapChiTiet" />
+  </wsdl:message>
+  <wsdl:message name="deleteHoaDonNhapChiTietSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteHoaDonNhapChiTietResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertHoaDonXuatSoapIn">
+    <wsdl:part name="parameters" element="tns:insertHoaDonXuat" />
+  </wsdl:message>
+  <wsdl:message name="insertHoaDonXuatSoapOut">
+    <wsdl:part name="parameters" element="tns:insertHoaDonXuatResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateHoaDonXuatSoapIn">
+    <wsdl:part name="parameters" element="tns:updateHoaDonXuat" />
+  </wsdl:message>
+  <wsdl:message name="updateHoaDonXuatSoapOut">
+    <wsdl:part name="parameters" element="tns:updateHoaDonXuatResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteHoaDonXuatSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteHoaDonXuat" />
+  </wsdl:message>
+  <wsdl:message name="deleteHoaDonXuatSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteHoaDonXuatResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertHoaDonXuatChiTietSoapIn">
+    <wsdl:part name="parameters" element="tns:insertHoaDonXuatChiTiet" />
+  </wsdl:message>
+  <wsdl:message name="insertHoaDonXuatChiTietSoapOut">
+    <wsdl:part name="parameters" element="tns:insertHoaDonXuatChiTietResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateHoaDonXuatChiTietSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateHoaDonXuatChiTiet" />
+  </wsdl:message>
+  <wsdl:message name="UpdateHoaDonXuatChiTietSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateHoaDonXuatChiTietResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteHoaDonXuatChiTietSoapIn">
+    <wsdl:part name="parameters" element="tns:deleteHoaDonXuatChiTiet" />
+  </wsdl:message>
+  <wsdl:message name="deleteHoaDonXuatChiTietSoapOut">
+    <wsdl:part name="parameters" element="tns:deleteHoaDonXuatChiTietResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertNhanVienSoapIn">
+    <wsdl:part name="parameters" element="tns:insertNhanVien" />
+  </wsdl:message>
+  <wsdl:message name="insertNhanVienSoapOut">
+    <wsdl:part name="parameters" element="tns:insertNhanVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateNhanVienSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateNhanVien" />
+  </wsdl:message>
+  <wsdl:message name="UpdateNhanVienSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateNhanVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertTaiKhoanSoapIn">
+    <wsdl:part name="parameters" element="tns:insertTaiKhoan" />
+  </wsdl:message>
+  <wsdl:message name="insertTaiKhoanSoapOut">
+    <wsdl:part name="parameters" element="tns:insertTaiKhoanResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTaiKhoanSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTaiKhoan" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTaiKhoanSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTaiKhoanResponse" />
+  </wsdl:message>
+  <wsdl:message name="insertNhomTaiKhoanSoapIn">
+    <wsdl:part name="parameters" element="tns:insertNhomTaiKhoan" />
+  </wsdl:message>
+  <wsdl:message name="insertNhomTaiKhoanSoapOut">
+    <wsdl:part name="parameters" element="tns:insertNhomTaiKhoanResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateNhomTaiKhoanSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateNhomTaiKhoan" />
+  </wsdl:message>
+  <wsdl:message name="UpdateNhomTaiKhoanSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateNhomTaiKhoanResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="insertSach">
+      <wsdl:input message="tns:insertSachSoapIn" />
+      <wsdl:output message="tns:insertSachSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateSach">
+      <wsdl:input message="tns:updateSachSoapIn" />
+      <wsdl:output message="tns:updateSachSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteSach">
+      <wsdl:input message="tns:deleteSachSoapIn" />
+      <wsdl:output message="tns:deleteSachSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertChiTietSach">
+      <wsdl:input message="tns:insertChiTietSachSoapIn" />
+      <wsdl:output message="tns:insertChiTietSachSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateChiTietSach">
+      <wsdl:input message="tns:updateChiTietSachSoapIn" />
+      <wsdl:output message="tns:updateChiTietSachSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteChiTietSach">
+      <wsdl:input message="tns:deleteChiTietSachSoapIn" />
+      <wsdl:output message="tns:deleteChiTietSachSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertTheLoaiSach">
+      <wsdl:input message="tns:insertTheLoaiSachSoapIn" />
+      <wsdl:output message="tns:insertTheLoaiSachSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTheLoaiSach">
+      <wsdl:input message="tns:updateTheLoaiSachSoapIn" />
+      <wsdl:output message="tns:updateTheLoaiSachSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteTheLoaiSach">
+      <wsdl:input message="tns:deleteTheLoaiSachSoapIn" />
+      <wsdl:output message="tns:deleteTheLoaiSachSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertNhaCungCap">
+      <wsdl:input message="tns:insertNhaCungCapSoapIn" />
+      <wsdl:output message="tns:insertNhaCungCapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateNhaCungCap">
+      <wsdl:input message="tns:updateNhaCungCapSoapIn" />
+      <wsdl:output message="tns:updateNhaCungCapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertNhaXuatBan">
+      <wsdl:input message="tns:insertNhaXuatBanSoapIn" />
+      <wsdl:output message="tns:insertNhaXuatBanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateNhaXuatBan">
+      <wsdl:input message="tns:updateNhaXuatBanSoapIn" />
+      <wsdl:output message="tns:updateNhaXuatBanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDonNhap">
+      <wsdl:input message="tns:insertHoaDonNhapSoapIn" />
+      <wsdl:output message="tns:insertHoaDonNhapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateHoaDonNhap">
+      <wsdl:input message="tns:updateHoaDonNhapSoapIn" />
+      <wsdl:output message="tns:updateHoaDonNhapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDonNhap">
+      <wsdl:input message="tns:deleteHoaDonNhapSoapIn" />
+      <wsdl:output message="tns:deleteHoaDonNhapSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDonNhapChiTiet">
+      <wsdl:input message="tns:insertHoaDonNhapChiTietSoapIn" />
+      <wsdl:output message="tns:insertHoaDonNhapChiTietSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateHoaDonNhapChiTiet">
+      <wsdl:input message="tns:updateHoaDonNhapChiTietSoapIn" />
+      <wsdl:output message="tns:updateHoaDonNhapChiTietSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDonNhapChiTiet">
+      <wsdl:input message="tns:deleteHoaDonNhapChiTietSoapIn" />
+      <wsdl:output message="tns:deleteHoaDonNhapChiTietSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDonXuat">
+      <wsdl:input message="tns:insertHoaDonXuatSoapIn" />
+      <wsdl:output message="tns:insertHoaDonXuatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="updateHoaDonXuat">
+      <wsdl:input message="tns:updateHoaDonXuatSoapIn" />
+      <wsdl:output message="tns:updateHoaDonXuatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDonXuat">
+      <wsdl:input message="tns:deleteHoaDonXuatSoapIn" />
+      <wsdl:output message="tns:deleteHoaDonXuatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDonXuatChiTiet">
+      <wsdl:input message="tns:insertHoaDonXuatChiTietSoapIn" />
+      <wsdl:output message="tns:insertHoaDonXuatChiTietSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHoaDonXuatChiTiet">
+      <wsdl:input message="tns:UpdateHoaDonXuatChiTietSoapIn" />
+      <wsdl:output message="tns:UpdateHoaDonXuatChiTietSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDonXuatChiTiet">
+      <wsdl:input message="tns:deleteHoaDonXuatChiTietSoapIn" />
+      <wsdl:output message="tns:deleteHoaDonXuatChiTietSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertNhanVien">
+      <wsdl:input message="tns:insertNhanVienSoapIn" />
+      <wsdl:output message="tns:insertNhanVienSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNhanVien">
+      <wsdl:input message="tns:UpdateNhanVienSoapIn" />
+      <wsdl:output message="tns:UpdateNhanVienSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertTaiKhoan">
+      <wsdl:input message="tns:insertTaiKhoanSoapIn" />
+      <wsdl:output message="tns:insertTaiKhoanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTaiKhoan">
+      <wsdl:input message="tns:UpdateTaiKhoanSoapIn" />
+      <wsdl:output message="tns:UpdateTaiKhoanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="insertNhomTaiKhoan">
+      <wsdl:input message="tns:insertNhomTaiKhoanSoapIn" />
+      <wsdl:output message="tns:insertNhomTaiKhoanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNhomTaiKhoan">
+      <wsdl:input message="tns:UpdateNhomTaiKhoanSoapIn" />
+      <wsdl:output message="tns:UpdateNhomTaiKhoanSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertSach">
+      <soap:operation soapAction="http://tempuri.org/insertSach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateSach">
+      <soap:operation soapAction="http://tempuri.org/updateSach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSach">
+      <soap:operation soapAction="http://tempuri.org/deleteSach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertChiTietSach">
+      <soap:operation soapAction="http://tempuri.org/insertChiTietSach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateChiTietSach">
+      <soap:operation soapAction="http://tempuri.org/updateChiTietSach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteChiTietSach">
+      <soap:operation soapAction="http://tempuri.org/deleteChiTietSach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertTheLoaiSach">
+      <soap:operation soapAction="http://tempuri.org/insertTheLoaiSach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTheLoaiSach">
+      <soap:operation soapAction="http://tempuri.org/updateTheLoaiSach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteTheLoaiSach">
+      <soap:operation soapAction="http://tempuri.org/deleteTheLoaiSach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertNhaCungCap">
+      <soap:operation soapAction="http://tempuri.org/insertNhaCungCap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateNhaCungCap">
+      <soap:operation soapAction="http://tempuri.org/updateNhaCungCap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertNhaXuatBan">
+      <soap:operation soapAction="http://tempuri.org/insertNhaXuatBan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateNhaXuatBan">
+      <soap:operation soapAction="http://tempuri.org/updateNhaXuatBan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDonNhap">
+      <soap:operation soapAction="http://tempuri.org/insertHoaDonNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateHoaDonNhap">
+      <soap:operation soapAction="http://tempuri.org/updateHoaDonNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDonNhap">
+      <soap:operation soapAction="http://tempuri.org/deleteHoaDonNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDonNhapChiTiet">
+      <soap:operation soapAction="http://tempuri.org/insertHoaDonNhapChiTiet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateHoaDonNhapChiTiet">
+      <soap:operation soapAction="http://tempuri.org/updateHoaDonNhapChiTiet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDonNhapChiTiet">
+      <soap:operation soapAction="http://tempuri.org/deleteHoaDonNhapChiTiet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDonXuat">
+      <soap:operation soapAction="http://tempuri.org/insertHoaDonXuat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateHoaDonXuat">
+      <soap:operation soapAction="http://tempuri.org/updateHoaDonXuat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDonXuat">
+      <soap:operation soapAction="http://tempuri.org/deleteHoaDonXuat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDonXuatChiTiet">
+      <soap:operation soapAction="http://tempuri.org/insertHoaDonXuatChiTiet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHoaDonXuatChiTiet">
+      <soap:operation soapAction="http://tempuri.org/UpdateHoaDonXuatChiTiet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDonXuatChiTiet">
+      <soap:operation soapAction="http://tempuri.org/deleteHoaDonXuatChiTiet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertNhanVien">
+      <soap:operation soapAction="http://tempuri.org/insertNhanVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNhanVien">
+      <soap:operation soapAction="http://tempuri.org/UpdateNhanVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertTaiKhoan">
+      <soap:operation soapAction="http://tempuri.org/insertTaiKhoan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTaiKhoan">
+      <soap:operation soapAction="http://tempuri.org/UpdateTaiKhoan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertNhomTaiKhoan">
+      <soap:operation soapAction="http://tempuri.org/insertNhomTaiKhoan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNhomTaiKhoan">
+      <soap:operation soapAction="http://tempuri.org/UpdateNhomTaiKhoan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertSach">
+      <soap12:operation soapAction="http://tempuri.org/insertSach" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateSach">
+      <soap12:operation soapAction="http://tempuri.org/updateSach" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSach">
+      <soap12:operation soapAction="http://tempuri.org/deleteSach" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertChiTietSach">
+      <soap12:operation soapAction="http://tempuri.org/insertChiTietSach" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateChiTietSach">
+      <soap12:operation soapAction="http://tempuri.org/updateChiTietSach" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteChiTietSach">
+      <soap12:operation soapAction="http://tempuri.org/deleteChiTietSach" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertTheLoaiSach">
+      <soap12:operation soapAction="http://tempuri.org/insertTheLoaiSach" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTheLoaiSach">
+      <soap12:operation soapAction="http://tempuri.org/updateTheLoaiSach" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteTheLoaiSach">
+      <soap12:operation soapAction="http://tempuri.org/deleteTheLoaiSach" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertNhaCungCap">
+      <soap12:operation soapAction="http://tempuri.org/insertNhaCungCap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateNhaCungCap">
+      <soap12:operation soapAction="http://tempuri.org/updateNhaCungCap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertNhaXuatBan">
+      <soap12:operation soapAction="http://tempuri.org/insertNhaXuatBan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateNhaXuatBan">
+      <soap12:operation soapAction="http://tempuri.org/updateNhaXuatBan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDonNhap">
+      <soap12:operation soapAction="http://tempuri.org/insertHoaDonNhap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateHoaDonNhap">
+      <soap12:operation soapAction="http://tempuri.org/updateHoaDonNhap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDonNhap">
+      <soap12:operation soapAction="http://tempuri.org/deleteHoaDonNhap" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDonNhapChiTiet">
+      <soap12:operation soapAction="http://tempuri.org/insertHoaDonNhapChiTiet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateHoaDonNhapChiTiet">
+      <soap12:operation soapAction="http://tempuri.org/updateHoaDonNhapChiTiet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDonNhapChiTiet">
+      <soap12:operation soapAction="http://tempuri.org/deleteHoaDonNhapChiTiet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDonXuat">
+      <soap12:operation soapAction="http://tempuri.org/insertHoaDonXuat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateHoaDonXuat">
+      <soap12:operation soapAction="http://tempuri.org/updateHoaDonXuat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDonXuat">
+      <soap12:operation soapAction="http://tempuri.org/deleteHoaDonXuat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertHoaDonXuatChiTiet">
+      <soap12:operation soapAction="http://tempuri.org/insertHoaDonXuatChiTiet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHoaDonXuatChiTiet">
+      <soap12:operation soapAction="http://tempuri.org/UpdateHoaDonXuatChiTiet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteHoaDonXuatChiTiet">
+      <soap12:operation soapAction="http://tempuri.org/deleteHoaDonXuatChiTiet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertNhanVien">
+      <soap12:operation soapAction="http://tempuri.org/insertNhanVien" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNhanVien">
+      <soap12:operation soapAction="http://tempuri.org/UpdateNhanVien" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertTaiKhoan">
+      <soap12:operation soapAction="http://tempuri.org/insertTaiKhoan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTaiKhoan">
+      <soap12:operation soapAction="http://tempuri.org/UpdateTaiKhoan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertNhomTaiKhoan">
+      <soap12:operation soapAction="http://tempuri.org/insertNhomTaiKhoan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNhomTaiKhoan">
+      <soap12:operation soapAction="http://tempuri.org/UpdateNhomTaiKhoan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://localhost:51161/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://localhost:51161/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
